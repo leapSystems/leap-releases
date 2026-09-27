@@ -1,0 +1,39 @@
+name: Something is broken
+description: Leap did something wrong, crashed, or would not start.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this. Please leave out API keys and anything personal from your chats.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you saw instead.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Leap version
+      description: Shown in API Keys & Settings, or in the installer's file name.
+      placeholder: "0.9.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS (Apple Silicon)
+        - macOS (Intel)
+        - Windows
+        - Linux
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or error text
+      description: Optional. An error message copied as text is the most useful thing you can add.

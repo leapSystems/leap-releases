@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or idea
+    url: https://github.com/leapSystems/leap-releases/discussions
+    about: Ask a question or suggest something in Discussions.
+  - name: Security problem
+    url: https://leapsystems.eu/legal
+    about: Please report security issues privately to security@leapsystems.eu, never in a public issue.
